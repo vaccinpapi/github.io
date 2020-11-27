@@ -1,3 +1,23 @@
+body {
+    background: whitesmoke;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
 h1 {
     font-size: 64pt;
+}
+
+h2 {
+    font-size: 30pt;
+    background: skyblue;
+}
+
+.h2_side {
+    writing-mode: vertical-lr;
 }
