@@ -1,7 +1,40 @@
 body {
-    background: whitesmoke
-}
+    margin: 0;
+    min-height: 500vh;
+    background-color: #a9b1c2;
+    animation: body 1s linear;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: #1b382e;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
+  @keyframes body {
+    to {
+      background-color: #6e7a91;
+    }
+  }
 
+  @media only screen and (min-width: 850px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        /*grid-template-columns: minmax(min-content, 75ch) min-content;*/
+        grid-column-gap: 3em; 
+        padding: 2em;
+        
+      
+    }
+    } 
+h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+p {
+    margin-top: 0;
+    padding-top: 0; 
+}
 #wrapper {
     display: flex;
     flex-direction: column;
@@ -27,3 +60,21 @@ h2 {
 img {
     max-width: 100%;
 }
+
+.dom {
+    display: inline-block;
+    animation: rotate 3s linear infinite;
+    font-size: 64pt;
+    font-weight: 900;
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .pasop {
+      font-size: 45pt;
+      font-weight: 700;
+  }
