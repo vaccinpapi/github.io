@@ -9,6 +9,7 @@ body {
     animation-delay: calc(var(--scroll) * -1s);
     animation-iteration-count: 1;
     animation-fill-mode: both;
+ 
   }
   @keyframes body {
     to {
@@ -23,14 +24,9 @@ body {
         /*grid-template-columns: minmax(min-content, 75ch) min-content;*/
         grid-column-gap: 3em; 
         padding: 2em;
-        
-      
     }
     } 
-h1 {
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
+
 p {
     margin-top: 0;
     padding-top: 0; 
@@ -39,14 +35,27 @@ p {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    align-items: center;
+    align-items: baseline;
+}
+
+.header {
+  padding: 25px;
+  margin-top: 50px;
+  min-height: 75vh;
+  align-items: center;
 }
 
 h1 {
-    font-size: 64pt;
+  margin: 0;
+  padding: 0;
+    font-size: 75pt;
+    font-weight: 900;
+    background: cornsilk;
+
 }
 
 h2 {
+    
     font-size: 25pt;
     background: skyblue;
 
@@ -57,15 +66,42 @@ h2 {
     background: rgb(199, 231, 147);
     align-self: flex-start;
 }
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 30pt;
+}
+
+h4 { 
+  margin: 0; 
+  padding: 0; 
+  
+}
+
 img {
     max-width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .dom {
-    display: inline-block;
-    animation: rotate 3s linear infinite;
-    font-size: 64pt;
-    font-weight: 900;
+  position: fixed;
+  bottom: 1%;
+  right: 5%;
+ color: white ;
+ background: darkcyan;
+  
+
+  animation: rotate 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    font-size: 15pt;
+    font-weight: 700;
+   
   }
   
   @keyframes rotate {
@@ -77,4 +113,47 @@ img {
   .pasop {
       font-size: 45pt;
       font-weight: 700;
+      color: orange;
   }
+
+.weer-container {
+  display: flex;
+  margin: 50px;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+  #cont_dcf144d017462a0e184a247db7c1e03a {
+    align-self: flex-start;
+  }
+
+  .arrow {
+    font-size: 80px;
+    align-self: center;
+   
+  }
+
+  .zeerdom {
+    display: inline-block;
+    animation: rotate 3s linear infinite;
+    font-size: 40pt;
+    font-weight: 900;
+    color: rgb(183, 245, 111);
+    
+    
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .dom-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+ 
