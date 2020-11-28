@@ -24,3 +24,6 @@ h2 {
     background: rgb(199, 231, 147);
     align-self: flex-start;
 }
+img {
+    max-width: 100%;
+}
